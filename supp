@@ -1,7 +1,0 @@
-        console.log(data.data[0].album);
-        console.log(data.data[0].album);
-
-        var img = document.createElement("img");
-        img.src = data.data[0].album.cover;
-        var block = document.getElementById("img");
-        block.appendChild(img);
