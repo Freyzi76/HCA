@@ -3,7 +3,7 @@ Création d'une interface web pour voiture le but est d'avoir les API Deezer, Sp
 integrer Phone de Micosoft pour avoir les messages et
 integrer Google Assistant ou Alexa;
 
-Mais le projet de réel est de moderniser une voiture des années 90, les modifs sont les suivantes :
+Mais le projet réel est de moderniser une voiture des années 90, les modifs sont les suivantes :
 - ajouter un écran tactile de 20 a 22" max en position portrait,
 - controler le chauffage, l'éclairage, le démarrage et mêmê le déverouillage avec empreinte biométrique ou par le serveur php combiner a une clé unique type double authentification et d'un routeur wifi qui ne distibue pas sont ssid (cela est basique)
 - ajout d'une IA qui aura accées a des caméras situer tout autour de la voiture ainsi qu'a des capteurs de distances doppler (expérimental),
