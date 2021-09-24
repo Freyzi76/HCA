@@ -1,0 +1,514 @@
+
+
+
+.themed-block {
+    --back-color: #2E3237;
+    --text-color: #707174    112, 113, 116; 
+    --title-color: #A7A9AA;
+    --shadow-color: 0, 0, 0;
+    --light-color: 80, 80, 80;
+    --border-active-color: #444;
+    --main-action-left: #D43C0B;
+    --main-action-right: #BF8A10;
+    background-color: #26282B;
+}
+
+body {
+    background-color: #2E3237;
+}
+
+#deezer {
+    display: grid;
+    grid-template-columns: 680px 310px;
+    grid-template-rows: 36px 319px;
+    
+}
+
+.deezer_app {
+
+    width: 990px;
+    height: 350px;
+    position: absolute;
+    background-color: #26282B;
+    box-shadow: 0 0 6px 6px #26282B, 12px 12px 16px 8px rgba(2, 2, 2, 0.7), -12px -12px 16px 8px rgba(27, 27, 27, 0.7);
+    padding: 25px;
+    border-radius: 20px;
+    
+    bottom: 100px;
+    left: 20px;
+    /*width: max-content;*/
+
+
+}
+
+.deezer_app_mini {
+
+    border: 1px solid red;
+
+    width: 350px;
+    height: 350px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+}
+
+
+.deezer_window_option {
+
+    width: 720px;
+    height: 25px;
+    margin-top: -25px;
+
+
+}
+
+.deezer_window_minimise {
+    width: 20px;
+    height: 20px;
+
+    margin-left: 700px;
+
+    box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.808), -3px -3px 6px 0px rgba(80, 80, 80, 0.884), inset 1px 1px 2px 0px rgba(0, 0, 0, 0.212), inset -1px -1px 2px 0px rgba(80, 80, 80, 0.281);
+
+    border-radius: 15px;
+    background-color: #4e4e4e;
+    border: 2px solid #2E3237;
+    transition: all .25s ease;
+    color: #ffffff;
+    font-size: 16px;
+    text-shadow: 0px 0px 2px rgba(112, 113, 116, 0);
+
+    text-align: justify;
+
+}
+
+.deezer_window_minimise > i {
+    position: absolute;
+    font-size: 10px;
+    margin-top: -4px;
+}
+
+
+
+
+
+
+
+.deezer_app_menu {
+    /*margin-top: 5px;*/
+    width: 680px;
+    height: 35px;
+    
+    display: inline-flex;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+
+
+.deezer_btn_menu {
+    
+
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+
+    background-color: #2E3237;
+    border: 2px solid #2E3237;
+    box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.747), -7px -7px 15px 0px rgba(80, 80, 80, 0.884), inset 1px 1px 2px 0px rgba(0, 0, 0, 0.308), inset -1px -1px 2px 0px rgba(80, 80, 80, 0.281);
+    transition: all .25s ease;
+    color: #707174;
+    font-size: 16px;
+    text-shadow: 0px 0px 2px rgba(112, 113, 116, 0);
+    transition: .5s;
+
+}
+
+.deezer_app_menu_home {
+    margin-left: 0px;
+    display: block;
+}
+
+
+#deezer_app_menu_search_bar_close {
+    display: none;
+    margin-left: 52px;
+}
+
+
+#deezer_app_menu_search_btn {
+    margin-left: 565px;
+    /*margin-left: 10px;*/
+}
+
+
+.deezer_app_menu_setting {
+    margin-left: 10px;
+}
+
+
+
+
+#deezer_search {
+    display: none;
+
+    width: 450px;
+    height: 25px;
+    margin-top: 2px;
+    margin-left: 10px;
+
+    border-radius: 25px;
+    font-size: 20px;
+    color: #ffffff;
+    outline: none;
+
+    background-color: #2E3237;
+    border: 2px solid #2E3237;
+    box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.747), -7px -7px 15px 0px rgba(80, 80, 80, 0.884), inset 1px 1px 2px 0px rgba(0, 0, 0, 0.308), inset -1px -1px 2px 0px rgba(80, 80, 80, 0.281);
+    transition: all .25s ease;
+}
+
+
+
+.deezer_app_home {
+    border: 1px solid orange;
+
+    width: 670px;
+    height: 310px;
+    margin-top: 15px;
+
+    grid-column: 1;
+    grid-row: 2;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+    background-color: #2E3237;
+    border: 2px solid #2E3237;
+    box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.747), -7px -7px 15px 0px rgba(80, 80, 80, 0.884), inset 1px 1px 2px 0px rgba(0, 0, 0, 0.308), inset -1px -1px 2px 0px rgba(80, 80, 80, 0.281);
+    transition: all .25s ease;
+}
+
+.menu_anim {
+    display: grid;
+    grid-template-columns: 670px 670px 670px;
+  
+    overflow-x: auto;
+}
+
+.menu_anim::-webkit-scrollbar {
+    width: 0;
+}
+
+.menu_item {
+
+    width: 669px;
+    height: 308px;
+
+}
+
+
+
+
+
+
+#result-deezer-search {
+
+    overflow-y: scroll;
+
+}
+
+
+.deezer_list_result_search{
+    width: 669px;
+    margin-left: -40px;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+.deezer_list_result_search > li {
+    list-style: none;
+    width: 660px;
+    height: 35px;
+    display: grid;
+    grid-template-columns: 30px 200px 180px 200px 30px;
+    grid-row: 30px;
+    
+
+    border-radius: 20px;
+
+    color: #ffffff;
+}
+
+
+.deezer_list_result_search > li > button {
+    width: 30px;
+    height: 30px;
+    margin-top: 2px;
+    margin-left: 3px;
+    
+
+    border-radius: 15px;
+    background-color: #2E3237;
+    border: 2px solid #2E3237;
+    box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.747), -7px -7px 15px 0px rgba(80, 80, 80, 0.884), inset 1px 1px 2px 0px rgba(0, 0, 0, 0.308), inset -1px -1px 2px 0px rgba(80, 80, 80, 0.281);
+    transition: all .25s ease;
+    color: #ffffff;
+}
+
+.deezer_list_result_search > li > button > i {
+    font-size: 10px;
+}
+
+
+.deezer_list_result_search > li > p {
+    
+    line-height: 0px;
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+
+
+
+
+
+#result-deezer-artist {
+    overflow-y: scroll;
+    width: 669px;
+    height: 308px;
+}
+
+#result-deezer-album {
+    overflow-y: scroll;
+    width: 669px;
+    height: 308px;
+}
+
+
+
+
+
+.deezer_app_player {
+
+    width: 300px;
+    height: 380px;
+
+    grid-column: 2;
+    grid-row: 1, 2;
+
+    border-radius: 15px;
+    margin-top: -15px;
+    margin-left: 20px;
+
+    background-color: #2E3237;
+    border: 2px solid #2E3237;
+    box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.747), -7px -7px 15px 0px rgba(80, 80, 80, 0.884), inset 1px 1px 2px 0px rgba(0, 0, 0, 0.308), inset -1px -1px 2px 0px rgba(80, 80, 80, 0.281);
+    transition: all .25s ease;
+
+}
+
+.deezer_app_player_control {
+    width: 300px;
+    height: 380px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 95px 95px 95px 95px;
+}
+
+
+#deezer_app_player_img {
+
+    width: 170px;
+    height: 170px;
+
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-left: -37px;
+
+    border: 5px solid #363636d7;
+    box-shadow: 7px 7px 15px 5px rgba(0, 0, 0, .3), -4px -4px 5px 7px rgba(80, 80, 80, 1);
+
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#deezer_app_player_img > img {
+    width: 170px;
+    height: 170px;
+}
+
+#deezer_app_player_img > i {
+    margin-top: 40px;
+    margin-left: 35px;
+    font-size: 90px;
+    color: #A7A9AA;
+}
+
+
+
+#deezer_app_player_info_title {
+
+    width: 200px;
+    grid-column: 2;
+    grid-row: 3;
+    margin-top: 20px;
+    margin-left: -55px;
+    height: 30px;
+
+}
+
+#deezer_app_player_info_artist {
+
+    width: 200px;
+    grid-column: 2;
+    grid-row: 3;
+    margin-top: 55px;
+    margin-left: -55px;
+    height: 30px;
+}
+
+.deezer_app_player_info_item {
+    width: 200px;
+    margin-top: 12px;
+    text-align: center;
+    line-height: 0px;
+    color: #A7A9AA;
+}
+
+
+.deezer_app_player_time_item {
+    font-size: 12px;
+    color: #A7A9AA; 
+}
+
+
+#deezer_app_player_actual_time {
+    grid-column: 1;
+    grid-row: 4;
+
+    margin-top: 15px;
+    margin-left: 9px;
+}
+
+#deezer_app_player_total_time {
+    grid-column: 3;
+    grid-row: 4;
+
+    margin-top: 15px;
+    margin-left: 60px;
+}
+
+
+
+#deezer_app_player_slider_seek {
+    width: 280px;
+    height: 6px;
+
+    margin-left: -92px;
+    border-radius: 25px;
+    border: 2px solid #363636d7;
+    background-color: #A7A9AA;
+    box-shadow: inset 2px 2px 3px -2px rgba(0, 0, 0, .3), inset -2px -2px 3px 0px rgba(80, 80, 80, .5);
+
+    grid-column: 2;
+    grid-row: 4;
+}
+
+#deezer_app_player_slider {
+    display: flex;
+    width: 280px;
+    height: 6px;
+
+    margin-top: 0px;
+    margin-left: 0;
+
+    border-radius: 25px;
+}
+
+#deezer_app_player_slider::-moz-range-progress {
+    height: 6px;
+    background: linear-gradient(90deg, #D43C0B, #BF8A10);
+}
+
+#deezer_app_player_controler {
+    border: 1px solid red;
+    width: 280px;
+    height: 85px;
+    margin-left: -92px;
+    margin-top: 10px;
+
+    grid-column: 2;
+    grid-row: 4;
+}
+
+
+#deezer_app_player_controler > button {
+
+    background-color: #2E3237;
+    border: 2px solid #2E3237;
+    box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.747), -7px -7px 15px 0px rgba(80, 80, 80, 0.884), inset 1px 1px 2px 0px rgba(0, 0, 0, 0.308), inset -1px -1px 2px 0px rgba(80, 80, 80, 0.281);
+    transition: all .25s ease;
+    color: #707174;
+    font-size: 16px;
+    text-shadow: 0px 0px 2px rgba(112, 113, 116, 0);
+    margin-top: 10px;
+
+}
+
+.deezer_app_player_controler_prev {
+    width: 45px;
+    height: 45px;
+    border-radius: 25px;
+    margin-left: 61px;
+
+}
+
+.deezer_app_player_controler_play {
+    width: 60px;
+    height: 60px;
+    border-radius: 35px;
+
+}
+
+.deezer_app_player_controler_next {
+    width: 45px;
+    height: 45px;
+    border-radius: 25px;
+
+}
+
+.white {
+    background: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

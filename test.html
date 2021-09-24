@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.8.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.js"></script>
+    <script src="controllers.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+
+    <button onclick="DZ.login()">login</button>
+
+    <button onclick="DZ.player.playTracks(1264313482)">test</button>
+    <button onclick="DZ.player.playAlbum(228284922)">test</button>
+    <button onclick="DZ.player.addToQueue(1264313482)">test</button>
+
+
+    <div id="dz-root"></div>
+    <div id="player" style="width:100%;"></div>
+    <script src="https://e-cdns-files.dzcdn.net/js/min/dz.js"></script>
+
+    <script>
+
+        DZ.init({
+		appId   : '491462' , 
+		channelUrl : 'http://localhost/channel.php', 
+        player : {
+			container: 'player',
+			width : 300,
+			height : 300,
+			format : 'square',
+			onload : function(){}
+		}
+	});
+
+    DZ.ready(function(sdk_options){
+	console.log('DZ SDK is ready', sdk_options);
+
+
+
+    // First, initialize the JavaScript SDK
+ 
+// Then, request the user to log in
+    DZ.login(function(response) {
+        if (response.authResponse) {
+            console.log('Welcome!  Fetching your information.... ');
+            DZ.api('/user/me', function(response) {
+                console.log('Good to see you, ' + response.name + '.');
+            });
+        } else {
+            console.log('User cancelled login or did not fully authorize.');
+        }
+    }, {perms: 'basic_access,email'});
+    });
+
+    DZ.getLoginStatus(function(response) {
+	if (response.authResponse) {
+		// logged in and connected user, someone you know
+	} else {
+		// no user session available, someone you dont know
+	}
+});
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+
+*{
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
+.body_t {
+    width: 1080px;
+    height: 1920px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 80%;
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    background-color: #2E3237;
+}
+
+
+

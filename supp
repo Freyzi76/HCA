@@ -1,0 +1,14 @@
+        console.log(data.data[0].album);
+        console.log(data.data[0].album);
+
+        var img = document.createElement("img");
+        img.src = data.data[0].album.cover;
+        var block = document.getElementById("img");
+        block.appendChild(img);
+
+
+        <div class="deezer_window_option"> 
+
+        <button type="button" class="deezer_window_minimise"><i class="fas fa-minus"></i></button>
+
+        </div>
